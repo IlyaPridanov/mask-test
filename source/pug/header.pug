@@ -1,0 +1,26 @@
+header.header
+    .container.header__row
+        a.header__logo(href="#")
+            picture
+                source(srcset="img/logo.webp" type="image/webp")
+                img(src="img/logo.png", alt="Лого")
+        nav.nav.nav--inactive.header__nav
+            ul.nav__list
+                li.nav__item
+                    a.nav__link(href="#" tabindex="0") Главная
+                li.nav__item
+                    a.nav__link(href="#" tabindex="0") Технология
+                li.nav__item
+                    a.nav__link(href="#" tabindex="0") График полетов
+                li.nav__item
+                    a.nav__link(href="#" tabindex="0") Гарантии
+                li.nav__item
+                    a.nav__link(href="#" tabindex="0") О компании
+                li.nav__item
+                    a.nav__link(href="#" tabindex="0") Контакты
+        button.header__btn(type="button" aria-label="Кнопка открывающая мобильное меню" tabindex="0")
+            span.hamburger
+                span.hamburger__bar.hamburger__bar--bar1
+                span.hamburger__bar.hamburger__bar--bar2
+                span.hamburger__bar.hamburger__bar--bar3
+                span.hamburger__bar.hamburger__bar--bar4

@@ -1,0 +1,334 @@
+.main {
+    padding: 100px 0 180px;
+
+    background-image: url("../img/background.webp");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-color: $black;
+
+    @media (max-width: $desktop-width) {
+        background-size: cover;
+    }
+}
+
+.no-webp {
+    background-image: url("../img/background.jpg");
+}
+
+.main__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main__caption {
+    margin: 0;
+    margin-top: 110px;
+    max-width: 440px;
+
+    font-family: $muse;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 1;
+    color: $white;
+
+    background: $main-caption-gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    clip-path: polygon(0% 0%,100% 0%,100% 15%,95% 20%,91% 100%,0% 100%);
+
+    & span {
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+}
+
+.main__link {
+    position: relative;
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 180px;
+
+    font-family: $muse;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1;
+    color: $white;
+
+    background-color: $primary-color-dark;
+
+    border: 1px solid;
+    border-image: $main-link-gradient;
+    border-image-slice: 1;
+
+    opacity: 0.6;
+
+    &:hover,
+    &:active,
+    &:focus {
+        cursor: pointer;
+
+        opacity: 1;
+        transition: all $transition-time $transition-function;
+    }
+
+    & div {
+        position: absolute;
+
+        opacity: 0.9;
+
+        &:first-child {
+            bottom: -1px;
+            left: 0px;
+
+            & span:first-child {
+                bottom: 0;
+                left: 0;
+            }
+
+            & span:last-child {
+                bottom: 7px;
+                left: 0;
+
+                transform-origin: 0 0;
+                transform: rotate(90deg);
+            }
+        }
+
+        &:last-child {
+            top: -1px;
+            right: 0px;
+
+            & span:first-child {
+                top: 0;
+                right: 0;
+            }
+
+            & span:last-child {
+                top: 0px;
+                right: -8px;
+
+                transform-origin: 0 0;
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    & span {
+        position: absolute;
+        display: block;
+        width: 7px;
+        height: 1px;
+
+        background-color: $white;
+
+        box-shadow: 0 0px 5px 1px $white;
+    }
+}
+
+.main__list {
+    margin-top: 76px;
+
+    display: grid;
+    grid-template-columns: 194px 151px;
+    grid-gap: 10px;
+    justify-content: end;
+}
+
+.main__item-link {
+    display: flex;
+    font-family: $muse;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1;
+    color: $white;
+
+    opacity: 0.8;
+
+    & div {
+        text-align: center;
+    }
+
+    & b {
+        display: block;
+        margin: 19px 0 0;
+
+        font-weight: 700;
+        font-size: 60px;
+    }
+
+    & span {
+        font-weight: 300;
+        font-size: 17px;
+    }
+
+    &:nth-child(4n-1) {
+        padding-top: 32px;
+        justify-content: center;
+
+        background: linear-gradient(-135deg,$main-item-gradient);
+        background-origin: border-box;
+
+        border: 1px solid transparent;
+
+        &:focus,
+        &:hover,
+        &:active {
+
+            border-image: linear-gradient(-135deg,$main-item-gradient);
+            border-image-slice: 1;
+
+            opacity: 1;
+        }
+
+    }
+
+    &:nth-child(4n-2) {
+        padding-bottom: 32px;
+        justify-content: flex-end;
+
+        background: linear-gradient(45deg,$main-item-gradient);
+        background-origin: border-box;
+
+        border: 1px solid transparent;
+
+        &:focus,
+        &:hover,
+        &:active {
+
+            border-image: linear-gradient(45deg,$main-item-gradient);
+            border-image-slice: 1;
+
+            opacity: 1;
+        }
+    }
+
+    &:nth-child(4n-3) {
+        padding-bottom: 32px;
+        justify-content: center;
+
+        background: linear-gradient(-45deg,$main-item-gradient);
+        background-origin: border-box;
+
+        border: 1px solid transparent;
+
+        &:focus,
+        &:hover,
+        &:active {
+
+            border-image: linear-gradient(-45deg,$main-item-gradient);
+            border-image-slice: 1;
+
+            opacity: 1;
+        }
+    }
+
+    &:nth-child(4n-4) {
+        padding-top: 32px;
+        justify-content: flex-end;
+
+        background: linear-gradient(135deg,$main-item-gradient);
+        background-origin: border-box;
+
+        border: 1px solid transparent;
+
+        &:focus,
+        &:hover,
+        &:active {
+
+            border-image: linear-gradient(135deg,$main-item-gradient);
+            border-image-slice: 1;
+
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: $desktop-width) {
+    .main {
+        background-image: url("../img/background-1250.webp");
+    }
+
+    .no-webp {
+        background-image: url("../img/background-1250.jpg");
+    }
+
+    .main__row {
+        display: block;
+    }
+
+    .main__caption {
+        margin-top: 90px;
+        margin-left: 40px;
+
+        clip-path: none;
+    }
+
+    .main__link {
+        margin-left: 40px;
+    }
+
+    .main__list {
+        margin-left: 20px;
+
+        justify-content: start;
+        grid-template-columns: 194px 194px;
+    }
+
+    .main__item-link:nth-child(4n-2),
+    .main__item-link:nth-child(4n-4) {
+        justify-content: center;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .main__caption {
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+
+    .main__link {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main__list {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: $tablet-min-width) {
+    .main {
+        padding-bottom: 100px;
+    }
+
+    .main__caption {
+        & span {
+            display: block;
+
+            font-size: 35px;
+        }
+    }
+
+    .main__link {
+        margin-top: 40px;
+    }
+
+    .main__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main__item-link {
+        & b {
+            font-size: 35px;
+        }
+    }
+}

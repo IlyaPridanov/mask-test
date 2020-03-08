@@ -1,0 +1,24 @@
+$muse: "Museosanscyrl", "Arial", sans-serif;
+
+$black: #000000;
+$white: #ffffff;
+$primary-color: rgba(21 , 10 , 1 , 0.2);
+$primary-color-light: rgba(102 , 102 , 102 , 0.2);
+$primary-color-dark: rgb(22 , 21 , 29);
+$primary-color-ultra-dark: rgba(0, 0, 0, 0.8);
+
+$main-link-gradient: linear-gradient(to top right, #3969a6 38%, #09203c 50%, #3969a6);
+$main-caption-gradient: linear-gradient(to right, #FFFFFF 13%, #ff4309);
+$main-item-gradient: rgba(255 , 255 , 255 , 0.2) , transparent 40%;
+
+$transition-time: 0.2s;
+$transition-function: ease-in;
+
+$mobile-width: 320px;
+$tablet-min-width: 500px;
+$tablet-width: 900px;
+$desktop-width: 1920px;
+$desktop-min-width: 1250px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

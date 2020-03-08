@@ -1,0 +1,74 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: $primary-color;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    @include hover();
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    width: 330px;
+
+    background-image:
+        url("../img/icon-angle-top-left.svg"),
+        url("../img/icon-angle-bottom-left.svg"),
+        url("../img/icon-angle-top-right.svg"),
+        url("../img/icon-angle-bottom-right.svg");
+
+    background-position:
+        left top,
+        left bottom,
+        right top,
+        right bottom;
+
+    background-repeat: no-repeat;
+    background-origin: border-box;
+
+    border: 1px solid $primary-color-light;
+
+    & img {
+        display: block;
+        margin-bottom: 15px;
+        margin-left: 10px;
+    }
+}
+
+.header__nav {
+    margin-left: auto;
+}
+
+.header__btn {
+    @include hover();
+    display: none;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+
+    background-color: transparent;
+    border: none;
+
+    outline: none;
+}
+
+@media (max-width: $tablet-width) {
+    .header {
+        background-color: $primary-color-ultra-dark;
+    }
+
+    .header__btn {
+        display: block;
+    }
+}

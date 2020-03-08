@@ -1,0 +1,27 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="7px"
+   height="7px"
+   viewBox="0 0 7 7">
+  <g
+     transform="rotate(90,151.07397,151.08705)"
+     style="fill:#ffffff">
+    <g
+       transform="matrix(3.7795245,0,0,3.7795276,-211.12171,195.9157)"
+       style="fill:#ffffff">
+      <rect
+         style="fill:#ffffff;stroke-width:0.00709051"
+         y="26.258656"
+         x="55.859333"
+         height="0.26458332"
+         width="1.8520833"/>
+      <rect
+         transform="rotate(-90)"
+         style="fill:#ffffff;stroke-width:0.00709051"
+         y="57.446835"
+         x="-28.110739"
+         height="0.26458332"
+         width="1.8520833"/>
+    </g>
+  </g>
+</svg>
